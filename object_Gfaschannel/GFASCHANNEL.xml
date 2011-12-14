@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DriverGen>
+  <module name="GFASCHANNEL" base="0x100000" addrinc="0x20000">
+    <vme_space name="0" am="0x39" dps="16" range="0x20000" offset="0x0">
+      <block name="0" offset="0x0">
+        <register name="VECTORS1" offset="0x0" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS2" offset="0xc00" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS3" offset="0x1800" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS4" offset="0x2400" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS5" offset="0x3000" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS6" offset="0x3c00" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS7" offset="0x4800" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS8" offset="0x5400" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS9" offset="0x6000" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS10" offset="0x6c00" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS11" offset="0x7800" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS12" offset="0x8400" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS13" offset="0x9000" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS14" offset="0x9c00" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS15" offset="0xa800" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS16" offset="0xb400" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS17" offset="0xc000" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS18" offset="0xcc00" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS19" offset="0xd800" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS20" offset="0xe400" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS21" offset="0xf000" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS22" offset="0xfc00" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS23" offset="0x10800" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS24" offset="0x11400" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS25" offset="0x12000" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS26" offset="0x12c00" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS27" offset="0x13800" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS28" offset="0x14400" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS29" offset="0x15000" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS30" offset="0x15c00" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS31" offset="0x16800" depth="0x600" mode="wr" size="2"/>
+        <register name="VECTORS32" offset="0x17400" depth="0x600" mode="wr" size="2"/>
+      </block>
+      <block name="1" offset="0x18000">
+        <register name="FUNC_CONVERT" offset="0x0" depth="0x2" mode="wr" size="2"/>
+        <register name="FUNC_SELECT" offset="0x4" depth="0x1" mode="wr" size="2"/>
+        <register name="CONFIG" offset="0x6" depth="0x1" mode="wr" size="2"/>
+        <register name="SLOPE" offset="0x8" depth="0x1" mode="wr" size="2"/>
+        <register name="DAC_VAL" offset="0xa" depth="0x1" mode="wr" size="2"/>
+        <register name="RECURR_CYCLES" offset="0xc" depth="0x1" mode="wr" size="2"/>
+        <register name="FUNC_DISABLE" offset="0xe" depth="0x2" mode="wr" size="2"/>
+      </block>
+      <block name="2" offset="0x1a000">
+        <register name="FORCE_CONVERT" offset="0x0" depth="0x1" mode="wr" size="2"/>
+        <register name="CONVERT_FUNC" offset="0x2" depth="0x1" mode="wr" size="2"/>
+        <register name="SELECT_FUNC" offset="0x4" depth="0x1" mode="wr" size="2"/>
+        <register name="SOFT_START" offset="0x6" depth="0x1" mode="wr" size="2"/>
+        <register name="SOFT_EV_START" offset="0x8" depth="0x1" mode="wr" size="2"/>
+      </block>
+      <block name="3" offset="0x1c000">
+        <register name="ACCEPT_STATUS" offset="0x0" depth="0x2" mode="r" size="2"/>
+        <register name="STATUS" offset="0x4" depth="0x1" mode="rc" size="2"/>
+        <register name="DISABLE_STATUS" offset="0x6" depth="0x2" mode="r" size="2"/>
+      </block>
+    </vme_space>
+  </module>
+</DriverGen>
